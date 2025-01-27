@@ -8,7 +8,7 @@ export default function Home() {
   useEffect(() => {
     const fetchMessage = async () => {
       try {
-        const response = await fetch("http://localhost:7071/api/testfunc");
+        const response = await fetch("https://wonderful-hill-015ed8d0f.4.azurestaticapps.net/api/testfunc?name=Asha");
         if (!response.ok) {
           throw new Error("Failed to fetch the message");
         }
